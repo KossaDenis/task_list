@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 111, 165);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    padding: 1em;
+}
+
+.content{
+    background-color:rgb(253, 252, 252) ;
+    padding: 2em;
+    border-radius: 10px;
+}
+.buttons{
+    border-bottom: 1px solid;
+}
+.button_add{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all .3s;
+    background-color: white;
+}
+.button_add:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.pop-up_bg{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.pop-up_window{
+    background-color: white;
+    padding: 3em;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title_pop-up_window{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    padding-bottom: 1em;
+}
+.content_pop-up_window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.field_text{
+    margin-top: 2em;
+    padding: 1em 2em;
+    width: 20em;
+    border-radius: 10px;
+    border:1px solid;
+    font-size: 1em;
+}
+.enter{
+    margin-top: 3em;
+    padding: 1.5em 4em;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .3s;
+    font-weight: 300;
+}
+.enter:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.error{
+    padding-top: 1em;
+    color: red;
+}
+.close{
+    width: 27px;
+    position: absolute;
+    right: 24px;
+    top: 18px;
+    cursor: pointer;
+}
