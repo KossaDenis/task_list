@@ -34,7 +34,55 @@ body{
     background-color: white;
 }
 .button_add:hover{
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+.box_user_text{
+    background-color:rgb(253, 252, 252) ;
+    padding: 2em;
+    border-radius: 10px;
+    display: none;
+}
+.user_text{
+    width: 100%;
+    font-size: 24px;
+    padding: 0.5em;
+    min-height: 60vh;
+    border-radius: 10px;
+    resize: none;
+}
+.btn_user_text{
+    text-align: end;
+    padding-top: 1em;
+}
+.save{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all .3s;
+    background-color: white;
+    font-size: 19px;
+}
+.save:hover{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+.cancellation{
+    padding: 10px 25px;
+    border-radius: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+    border: 1px solid;
+    cursor: pointer;
+    transition: all .3s;
+    background-color: white;
+    font-size: 19px;
+}
+.cancellation:hover{
+    background-color: rgb(180, 0, 0);
     color: white;
 }
 .pop-up_bg{
@@ -90,7 +138,7 @@ body{
     font-weight: 300;
 }
 .enter:hover{
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(20, 20, 20);
     color: white;
 }
 .error{

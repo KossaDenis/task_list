@@ -20,13 +20,26 @@ document.getElementById('enter').addEventListener('click', function () {
         li.style.borderBottom = '1px solid'
         li.style.padding = '1em'
         li.style.wordBreak = 'break-word'
+        li.style.cursor = 'pointer'
+        li.style.hover = 'color', 'red'
 
-        let btn = document.createElement('button')
-        btn.innerText = 'Ред'
-        li.appendChild(btn)
-        let btn1 = document.createElement('button')
-        btn1.innerText = 'Ред'
-        li.appendChild(btn1)
+        
+
+        li.addEventListener('click',function(){
+            document.getElementById('content').style.display = 'none'
+            
+            if(document.getElementById('content').style.display == 'none'){
+                document.getElementById('box_user_text').style.display = 'block'
+            }
+        })
+        
+        // let btn = document.createElement('button')
+        // btn.innerText = 'Ред'
+        // li.appendChild(btn)
+        // let btn1 = document.createElement('button')
+        // btn1.innerText = 'Ред'
+        // li.appendChild(btn1)
+
 
         document.getElementById('error').innerText = ''
         document.getElementById('field_text').value = ''
@@ -34,4 +47,10 @@ document.getElementById('enter').addEventListener('click', function () {
 
 })
 
-
+document.getElementById('cancellation').addEventListener('click',function(){
+    document.getElementById('box_user_text').style.display = 'none'
+    
+    if(document.getElementById('box_user_text').style.display == 'none'){
+        document.getElementById('content').style.display = 'block'
+    }
+})
